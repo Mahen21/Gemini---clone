@@ -1,0 +1,103 @@
+
+/* Sidebar Container */
+.sidebar {
+    height: 100vh; /* Ensure full viewport height */
+    display: inline-flex ; /* Change to flex */
+    flex-direction: column;
+    justify-content: space-between; /* Push .top and .bottom apart */
+    background-color: #f0f4f9;
+    padding: 35px 25px;
+}
+
+/* Sidebar Menu Icon */
+.sidebar img {
+    width: 20px;
+}
+
+/* Top Section */
+.sidebar .top {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .menu {
+    display: block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* New Chat Button */
+.sidebar .new-chat {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #e6eaf1;
+    border-radius: 50px;
+    font-size: 15px;
+    color: grey;
+    cursor: pointer;
+}
+
+/* Recent Section */
+.sidebar .recent {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1.5s;
+
+}
+
+.sidebar .recent-title {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #282828;
+}
+
+.sidebar .recent-entry {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    padding-right: 40px;
+    border-radius: 50px;
+    color: #282828;
+    cursor: pointer;
+}
+
+.sidebar .recent-entry:hover {
+    background-color: #e2e6eb;
+}
+
+/* Bottom Section */
+.sidebar .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Add spacing between items */
+}
+
+/* Bottom Items */
+.sidebar .bottom-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0; /* Add padding for clickable area */
+    cursor: pointer;
+    color: #282828;
+    font-size: 14px;
+}
+
+.sidebar .bottom-item img {
+    width: 20px;
+}
+
+.sidebar .bottom-item:hover {
+    color: #1a73e8; /* Optional: Hover effect for clarity */
+}
+
+@media (max-width: 600px){
+    .sidebar{
+        display: none;
+    }
+}
