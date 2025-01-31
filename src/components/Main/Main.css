@@ -32,7 +32,7 @@ border-radius: 50%;
     padding: 20px;
 }
 
-.main .greet .span{
+.main .greet span{
     background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546); /* Gradient for WebKit */
     background: linear-gradient(16deg, #4b90ff, #ff5546); /* Standard gradient */
     -webkit-background-clip: text; /* WebKit-specific */
